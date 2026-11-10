@@ -208,6 +208,7 @@ func TestDeployment_IngressProvider(t *testing.T) {
 				"--metrics.prometheus=true",
 				ArgEntrypointWebAddress,
 				"--entrypoints.websecure.address=:8443",
+				"--entrypoints.websecure.http.tls=true",
 				"--global.checknewversion=false",
 			}
 			for _, commonArg := range commonArgs {
